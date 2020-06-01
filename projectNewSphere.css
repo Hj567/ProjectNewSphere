@@ -502,6 +502,22 @@ display: none;
 
 	display: none;
 }
+
+
+@font-face{
+	font-family: Yuanti SC;
+	src:url(Font/YuantiSC.ttf);
+	font-style: normal;
+}
+
+@font-face{
+	font-family: Montserrat;
+	src:url(Font/Montserrat-Black.ttf),url(Font/Montserrat-BlackItalic.ttf),url(Font/Montserrat-Bold.ttf),url(Font/Montserrat-BoldItalic.ttf),url(Font/Montserrat-ExtraBold.ttf),url(Font/Montserrat-ExtraBoldItalic.ttf),url(Font/Montserrat-ExtraLight.ttf),url(Font/Montserrat-ExtraLightItalic.ttf),url(Font/Montserrat-Italic.ttf),url(Font/Montserrat-Light.ttf),url(Font/Montserrat-LightItalic.ttf),url(Font/Montserrat-Medium.ttf),url(Font/Montserrat-MediumItalic.ttf),url(Font/Montserrat-Regular.ttf),url(Font/Montserrat-SemiBold.ttf),url(Font/Montserrat-SemiBoldItalic.ttf),url(Font/Montserrat-Thin.ttf),url(Font/Montserrat-ThinItalic.ttf);
+	font-style: normal;
+}
+
+
+
 @media only screen and (max-width: 414px) {
 
 
