@@ -11,9 +11,10 @@
     <link rel="stylesheet" type="text/css" href="projectNewSphere.css">
       <link rel="stylesheet"  href="animate.css">
 
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="stylesheet" href="aos.css" type="text/css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 
 </head>
 
@@ -21,7 +22,7 @@
 
 <body>
 
-<section class="homeSection">
+<section class="homeSection fadeIn animated" style="animation-duration: 2s;">
 	
 	<div class="hamBurger">
 		
@@ -60,7 +61,7 @@
 </div>
 
 
-<div class="mainContent">
+<div class="mainContent ">
 	
 
 <div class="centerImg">
@@ -124,7 +125,7 @@
 
 <section class="aboutSection">
 	
-<div class="container1">
+<div class="container1" data-aos="fade-up" data-aos-duration="1000">
   <div class="panel">
       <div class="aside">
       </div>
@@ -165,11 +166,11 @@
 
 
       </div>
-      <div class="right-panel" >
+      <div class="right-panel">
       	<div class="container">
 	<div class="contentMain">
-		<h2>About Us</h2>
-		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+		<h2 >About Us</h2>
+		<p >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
 		<div class="buttonClass">
 		 <button >Continue Reading</button> <button onclick="slide()" >Contact Us</button>
 		</div>
@@ -227,10 +228,10 @@
 <div class="right-panel">
       	<div class="container">
 	<div class="contentMain">
-		<h2>About Us</h2>
+		<h2  data-aos="fade-up" data-aos-duration="1000">About Us</h2>
 		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-		<div class="buttonClass">
-		 <button >Continue Reading</button> <button id="button1" onclick="slide1()">Contact Us</button>
+		<div class="buttonClass" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
+		 <button >Continue Reading</button> <button onclick="slide()" >Contact Us</button>
 		</div>
 	</div>
 </div>
@@ -278,15 +279,20 @@
 	
 	<div class="twoWrapper">
 		
+		<div data-aos="fade-down" data-aos-duration="1000">
 		<span class="textOne b">VOLUNTEER</span>
 		<span class="textone b">LOCATE</span>
-		
+		</div>
 
 	</div>
 
 <div class="threeWrapper">
 
+	<div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+
 <span class="textthree c">NURSE</span>
+
+</div>
 
 </div>
 
@@ -333,13 +339,19 @@
 
 </body>
 
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
  
   <script>
 
-    AOS.init({
+ AOS.init({
 
-    });
+
+});
+
+
+
+window.addEventListener('load', AOS.refresh);
 
 function slide(){
   let target = document.querySelector('.aside');
@@ -352,16 +364,7 @@ function slide(){
   }
 }
 
-function slide1(){
-  let target = document.querySelector('.right-panel');
- 
-  
-  if (target.classList.contains('change1')) {
-     target.classList.remove('change1')
-  }else {
-     target.classList.add('change1')
-  }
-}
+
 
 </script>
 
