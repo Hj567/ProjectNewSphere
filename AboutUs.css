@@ -1,0 +1,142 @@
+body{
+
+margin: 0;
+padding:0;
+font-family: Montserrat;
+text-align: center;
+background-color: #FFBA00;
+
+
+}
+
+
+.mainText{
+  display: flex;
+  justify-content: center;
+  animation-duration: 2s;
+}
+
+p{
+text-align: justify;
+  font-family: Yuanti SC;
+  font-size: 15px;
+  width: 600px;
+  padding-top: 50px;
+  margin-bottom: 50px;
+  animation-duration: 2s;
+
+}
+
+.buttonContainer{
+
+  display: flex;
+  justify-content: center;
+}
+
+button{
+
+  height: 40px;
+  width:200px;
+  border-radius: 5px;
+  margin-top: 10px;
+  background-color: #2196f3;
+  border:none;
+  color: white;
+  margin-bottom: 50px;
+  font-size: 13px;
+
+}
+
+button a{
+
+  text-decoration: none;
+  color: white;
+}
+
+h1{
+  font-size: 100px;
+  margin-bottom: -25px;
+}
+
+
+@font-face{
+  font-family: BebasNeue;
+  src:url(Font/BebasNeue.otf);
+  font-style: normal;
+}
+
+@font-face{
+  font-family: Yuanti SC;
+  src:url(Font/YuantiSC.ttf);
+  font-style: normal;
+}
+
+@font-face{
+  font-family: Simplifica;
+  src:url(Font/SIMPLIFICA.ttf);
+  font-style: normal;
+}
+
+@font-face{
+  font-family: Yuanti SC;
+  src:url(Font/YuantiSC.ttf);
+  font-style: normal;
+}
+
+@font-face{
+  font-family: Montserrat;
+  src:url(Font/Montserrat-Black.ttf),url(Font/Montserrat-BlackItalic.ttf),url(Font/Montserrat-Bold.ttf),url(Font/Montserrat-BoldItalic.ttf),url(Font/Montserrat-ExtraBold.ttf),url(Font/Montserrat-ExtraBoldItalic.ttf),url(Font/Montserrat-ExtraLight.ttf),url(Font/Montserrat-ExtraLightItalic.ttf),url(Font/Montserrat-Italic.ttf),url(Font/Montserrat-Light.ttf),url(Font/Montserrat-LightItalic.ttf),url(Font/Montserrat-Medium.ttf),url(Font/Montserrat-MediumItalic.ttf),url(Font/Montserrat-Regular.ttf),url(Font/Montserrat-SemiBold.ttf),url(Font/Montserrat-SemiBoldItalic.ttf),url(Font/Montserrat-Thin.ttf),url(Font/Montserrat-ThinItalic.ttf);
+  font-style: normal;
+}
+
+
+@media only screen and (max-width: 414px) {
+
+
+
+.mainText{
+  display: flex;
+  justify-content: center;
+}
+
+p{
+text-align: justify;
+  font-family: Yuanti SC;
+  font-size: 15px;
+  width: 300px;
+  padding-top: 50px;
+
+}
+
+.buttonContainer{
+
+  display: flex;
+  justify-content: center;
+}
+
+button{
+
+  height: 40px;
+  width:200px;
+  border-radius: 5px;
+  margin-top: 10px;
+  background-color: #2196f3;
+  border:none;
+  color: white;
+  margin-bottom: 50px;
+  font-size: 13px;
+
+}
+
+h1{
+  margin-top: 70px;
+  font-size: 50px;
+  margin-bottom: -25px;
+}
+
+
+
+
+  }
+
+
