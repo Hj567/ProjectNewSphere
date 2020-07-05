@@ -26,13 +26,15 @@ function showAllColleges(allData) {
 		var strong = document.createElement('strong');
 		var hello = document.createElement('strong');
 		var br = document.createElement('br');
-
+		
 		strong.textContent = data.name;
 		content.appendChild(strong);
-		
+	
 		hello.textContent = data.description;
 		content.appendChild(hello);
 
+		hello.textContent = data.description;
+		content.appendElement(br);
 
 
 
