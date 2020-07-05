@@ -968,7 +968,7 @@ top: 100%;
 
 }
 
-@media screen and (max-width: 736px) and (orientation: landscape) { 
+@media screen and (max-width: 812px) and (orientation: landscape) { 
 
 
   .portWindow{
