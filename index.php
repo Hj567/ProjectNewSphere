@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Access Google Maps API in PHP</title>
+<<<<<<< HEAD
 	<meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes user-scalable=no"> 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -9,23 +10,47 @@
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js/googlemap.js"></script>
 
+=======
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/googlemap.js"></script>
+>>>>>>> 85864a1b6c1c232de1bd402285a67c126fd94ba3
 	<style type="text/css">
 		
 		.container {
 			height: 100vh;
 			width: 100%;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 85864a1b6c1c232de1bd402285a67c126fd94ba3
 		}
 		#map {
 			width: 100%;
 			height: 100%;
 			
+<<<<<<< HEAD
 			
+=======
+>>>>>>> 85864a1b6c1c232de1bd402285a67c126fd94ba3
 		}
 		#data, #allData {
 			display: none;
 		}
 
+<<<<<<< HEAD
+=======
+		.portWindow{
+
+			height: 100%;
+			width: 100%;
+			z-index: 10000;
+			background-color: #FFFFFF;
+			opacity: 0.7;
+			position: absolute;
+			display: none;
+		}
+>>>>>>> 85864a1b6c1c232de1bd402285a67c126fd94ba3
 
 		.portWindow img{
 
@@ -55,13 +80,21 @@
 
 @media (orientation: portrait) {
   .portWindow {
+<<<<<<< HEAD
     display:hidden;
+=======
+    display:block;
+>>>>>>> 85864a1b6c1c232de1bd402285a67c126fd94ba3
   }
 
 
 
   .returnButton{
+<<<<<<< HEAD
 z-index: 1;
+=======
+z-index: -1;
+>>>>>>> 85864a1b6c1c232de1bd402285a67c126fd94ba3
   }
 }
 
@@ -75,6 +108,17 @@ z-index: 1;
 
 	<a href="index.html"><button class="returnButton">Home</button></a>
 
+<<<<<<< HEAD
+=======
+<div class="portWindow">
+	
+<img src="Group 12.png">
+
+
+
+
+</div>
+>>>>>>> 85864a1b6c1c232de1bd402285a67c126fd94ba3
 
 	<div class="container">
 		<?php 
@@ -96,6 +140,9 @@ z-index: 1;
 <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAw7sElpqjqOXkE9CRXDQyv9BpK4Leu4cI&callback=loadMap">
 </script>
+<<<<<<< HEAD
 <script src="https://cdn.klokantech.com/maptilerlayer/v1/index.js"></script>
 
+=======
+>>>>>>> 85864a1b6c1c232de1bd402285a67c126fd94ba3
 </html>

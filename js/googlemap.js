@@ -1,6 +1,7 @@
 var map;
 var geocoder;
 
+<<<<<<< HEAD
 
 
 
@@ -14,6 +15,8 @@ function showPosition(position) {
 }
 
 
+=======
+>>>>>>> 85864a1b6c1c232de1bd402285a67c126fd94ba3
 function loadMap() {
 	var pune = {lat: 28.5649, lng: 77.2403};
     map = new google.maps.Map(document.getElementById('map'), {
@@ -21,12 +24,18 @@ function loadMap() {
       center: pune
     });
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 85864a1b6c1c232de1bd402285a67c126fd94ba3
     var cdata = JSON.parse(document.getElementById('data').innerHTML);
     geocoder = new google.maps.Geocoder();  
     codeAddress(cdata);
 
     var allData = JSON.parse(document.getElementById('allData').innerHTML);
     showAllColleges(allData)
+<<<<<<< HEAD
 
 infoWindow = new google.maps.InfoWindow;
 
@@ -63,12 +72,16 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
                               'Error: Your browser doesn\'t support geolocation.');
         infoWindow.open(map);
       }
+=======
+}
+>>>>>>> 85864a1b6c1c232de1bd402285a67c126fd94ba3
 
 function showAllColleges(allData) {
 	var infoWind = new google.maps.InfoWindow;
 	Array.prototype.forEach.call(allData, function(data){
 		var content = document.createElement('div');
 		var content1 = document.createElement('div');
+<<<<<<< HEAD
 		var content2 = document.createElement('div');
 		var strong = document.createElement('strong');
 		var hello = document.createElement('strong');
@@ -91,6 +104,20 @@ function showAllColleges(allData) {
 		hello2.textContent = data.Date;
 		content.appendChild(hello2);
 		
+=======
+		var strong = document.createElement('strong');
+		var hello = document.createElement('strong');
+		var br = document.createElement('br');
+		
+		strong.textContent = data.name;
+		content.appendChild(strong);
+	
+		hello.textContent = data.description;
+		content.appendChild(hello);
+
+		hello.textContent = data.description;
+		content.appendElement(br);
+>>>>>>> 85864a1b6c1c232de1bd402285a67c126fd94ba3
 
 
 
@@ -142,6 +169,10 @@ function updateCollegeWithLatLng(points) {
 		}
 	})
 	
+<<<<<<< HEAD
 }
 
 var geoloccontrol = new klokantech.GeolocationControl(map, mapMaxZoom);
+=======
+}
+>>>>>>> 85864a1b6c1c232de1bd402285a67c126fd94ba3
