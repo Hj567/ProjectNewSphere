@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact V1</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+
+ <link rel="stylesheet"  href="animate.css">
+
+</head>
+<body>
+
+	<div class="contact1 fadeIn animated" style="animation-duration: 2s">
+		<div class="container-contact1">
+			<div class="contact1-pic" data-tilt>
+				<img src="images/img-01.jpg" alt="IMG">
+			</div>
+
+			<form class="contact1-form validate-form" action="ProjectNewSphere.php" method="POST" enctype="multipart/form-data">
+				<span class="contact1-form-title">
+					Tell Your Tail.
+				</span>
+
+				<div class="wrap-input1 validate-input">
+					<input class="input1" type="text" name="name" placeholder="Name">
+					<span class="shadow-input1"></span>
+
+				</div>
+
+				<div class="wrap-input1 validate-input">
+					<input class="input1" type="date" name="date" placeholder="Name">
+					<span class="shadow-input1"></span>
+
+				</div>
+
+				<div class="wrap-input1 validate-input">
+					<input id="id1" class="input1" type="text" name="lng" placeholder="Longitude" required="required">
+					<span id="imageOne" class="shadow-input1" style="z-index: 1;"><img src="images/location.png" onclick="getLocation()"></span>
+					<span class="shadow-input1"></span>
+
+				</div>
+
+				<div class="wrap-input1 validate-input">
+					<input id="id2" class="input1" type="text" name="lat" placeholder="Latitude" required="required">
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1 validate-input">
+					<textarea class="input1" name="message" placeholder="Tell Your Tail" required="required"></textarea>
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="container-contact1-form-btn">
+					<button class="contact1-form-btn">
+						<span>
+							Submit
+							<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+						</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+<script type="text/javascript">
+	
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+
+}
+
+function showPosition(position) {
+
+  document.getElementById("id1").setAttribute('value', position.coords.longitude);
+  document.getElementById("id2").setAttribute('value', position.coords.latitude);
+
+}
+
+
+
+</script>
+
+
+
+</body>
+</html>
